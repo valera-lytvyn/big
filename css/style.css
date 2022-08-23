@@ -118,28 +118,20 @@ h6 {
 
 }
 
-
-
 .header {
+  display: flex;
+}
+
+.navbar {
+  z-index: 20;
   height: 8.8%;
   min-height: 140px;
   width: 100%;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  border: #00b1b1 3px solid;
 }
 
 
-.header__menu__list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.header__item {
+.nav-item {
   font-size: 16px;
   line-height: 25px;
   color: #262626;
@@ -148,7 +140,7 @@ h6 {
   margin: 15px;
 }
 
-.header__item:hover {
+.nav-item:hover {
   border-top: #ff6033 solid 3px;
   color: #262626;
 
@@ -208,9 +200,9 @@ h6 {
   width: 100%;
   height: 100%;
   background: #00b1b1;
-  display: flex;
   justify-content: center;
 }
+
 
 .home_body__part_2 {
   display: flex;
@@ -225,7 +217,7 @@ h6 {
 .home_body__picture {
   height: 100%;
   display: flex;
-
+  margin-bottom: 5%;
 }
 
 
@@ -267,7 +259,7 @@ h6 {
 
 
 
-.body_blog{
+.body_blog {
   background: #b07bf7;
   color: #ffffff;
   font-family: "Raleway";
@@ -445,7 +437,7 @@ h6 {
   line-height: 18px;
   color: #282528;
   font-weight: 700;
-  margin-top: 20px;
+
 }
 
 .profession {
@@ -458,6 +450,7 @@ h6 {
   height: 270px;
   width: 270px;
   position: relative;
+
 }
 
 .icon_social {
@@ -490,23 +483,25 @@ h6 {
   z-index: 2;
   opacity: 1;
   transition: all 1.0s ease-in;
- transform: translate(0px, 220%);
-border-radius: 5%;
-background: #2ca6c580;
-height: 80px;
+  transform: translate(0px, 220%);
+  border-radius: 5%;
+  background: #2ca6c580;
+  height: 80px;
 }
 
 
 
-.fa-brands{
+.fa-brands {
   font-size: 25px;
   color: #fff;
   text-decoration: none;
 }
-.logo:hover .fa-brands{
-  color:rgb(255, 153, 0);
+
+.logo:hover .fa-brands {
+  color: rgb(255, 153, 0);
   zoom: 150%;
 }
-.logo:hover{
+
+.logo:hover {
   background-color: rgba(255, 255, 255, 0);
 }
