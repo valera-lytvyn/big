@@ -44,6 +44,7 @@
   font-weight: 700;
   font-family: "Raleway";
   margin: 10px;
+  border-top: transparent solid 3px;
 }
 
 .nav-item:hover {
@@ -413,8 +414,8 @@
 .contact {
   display: flex;
   flex-direction: column;
-  width: 92%;
-  /* ?????? 92% */
+  width: 100%;
+ 
 }
 
 .wrap_contact {
@@ -488,14 +489,15 @@
   font-weight: 300;
   font-family: "Raleway";
   text-indent: 15px;
-
-}
+  }
 
 .cell:placeholder-shown {
   opacity: .3;
 }
 
-
+.cell:hover{
+  border-left: 5px solid #355b81;
+}
 .message {
   background: #00c4c4;
   font-size: 15px;
@@ -509,6 +511,7 @@
   width: 80%;
   margin-bottom: 10.5%;
   position: relative;
+  resize: none;
 }
 
 .message::placeholder {
