@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
 
 /* _____________________ */
@@ -8,8 +6,6 @@
 .container {
   height: 100%;
   width: 78%;
-
-
 }
 
 
@@ -21,12 +17,17 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-
-
 }
 
 .header {
   display: flex;
+}
+
+.navbar-nav li {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .navbar {
@@ -50,7 +51,6 @@
 .nav-item:hover {
   border-top: #ff6033 solid 3px;
   color: #262626;
-
 }
 
 .home_body__part_1 {
@@ -100,7 +100,6 @@
   justify-content: center;
   margin-bottom: 5%;
   height: 40px;
-
 }
 
 .turquoise_wrap {
@@ -117,8 +116,6 @@
   flex-wrap: nowrap;
   height: 100%;
   width: 78%;
-
-
 }
 
 .home_body__picture {
@@ -162,7 +159,6 @@
   color: #ffffff;
   font-weight: 300;
   font-family: "Raleway";
-
 }
 
 .blog {
@@ -266,8 +262,6 @@
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
   flex: 1;
   position: relative;
-
-
 }
 
 .data_wrap {
@@ -341,7 +335,6 @@
   line-height: 18px;
   color: #282528;
   font-weight: 700;
-
 }
 
 .profession {
@@ -354,7 +347,6 @@
   height: 270px;
   width: 270px;
   position: relative;
-
 }
 
 .icon_social {
@@ -370,7 +362,6 @@
   align-items: center;
   z-index: -1;
   opacity: 0;
-
 }
 
 .logo {
@@ -415,7 +406,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
- 
 }
 
 .wrap_contact {
@@ -468,7 +458,6 @@
   height: 50px;
   width: 80%;
   margin-bottom: 20px;
-
 }
 
 .cell {
@@ -489,15 +478,16 @@
   font-weight: 300;
   font-family: "Raleway";
   text-indent: 15px;
-  }
+}
 
 .cell:placeholder-shown {
   opacity: .3;
 }
 
-.cell:hover{
+.cell:hover {
   border-left: 5px solid #355b81;
 }
+
 .message {
   background: #00c4c4;
   font-size: 15px;
@@ -522,7 +512,6 @@
   font-family: "Raleway";
   text-indent: 15px;
   position: absolute;
-
 }
 
 .footer_row {
