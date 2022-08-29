@@ -2,7 +2,6 @@
 
 /* _____________________ */
 
-
 .container {
   height: 100%;
   width: 78%;
@@ -21,19 +20,13 @@
 
 .header {
   display: flex;
+  box-shadow: 0px 1px 3px 0px #585858;
 }
 
-.navbar-nav li {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
 .navbar {
-  z-index: 20;
   height: 8.8%;
-  min-height: 120px;
+  min-height: 80px;
   width: 100%;
   display: flex;
 }
@@ -44,11 +37,20 @@
   color: #262626;
   font-weight: 700;
   font-family: "Raleway";
-  margin: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+  border: 2px solid grey;
+  border-radius: 20%;
+}
+
+.nav-link {
   border-top: transparent solid 3px;
 }
 
-.nav-item:hover {
+.nav-link:hover {
   border-top: #ff6033 solid 3px;
   color: #262626;
 }
@@ -59,6 +61,14 @@
   justify-content: space-between;
   flex: 1;
   margin: 28% 0;
+}
+
+.home_body__title {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 60px;
+  color: #262626;
+  font-family: "Raleway";
 }
 
 .home_body__title {
@@ -209,6 +219,7 @@
   text-align: start;
 }
 
+
 .author {
   font-size: 13px;
   font-weight: 300;
@@ -218,14 +229,12 @@
   text-align: start;
 }
 
+
 .button_text {
   font-size: 20px;
   font-weight: 300;
   text-transform: uppercase;
 }
-
-
-
 .picture {
   min-height: 310px;
   display: flex;
@@ -235,9 +244,6 @@
 .picture:hover {
   filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
 }
-
-
-
 .pic_1 {
   background: url(../img/pic_1.png) no-repeat;
   background-size: cover;
@@ -255,7 +261,6 @@
   background-size: cover;
   flex: 1;
 }
-
 .gradient {
   width: 100%;
   height: 100%;
@@ -273,14 +278,11 @@
   top: 30px;
   left: 30px;
 }
-
 .data_wrap:hover {
   border-radius: 25%;
   transition: all 0.5s ease-in;
   transform: scale(1.5);
 }
-
-
 .wrap_button {
   display: flex;
   justify-content: center;
@@ -296,10 +298,6 @@
   justify-content: center;
   align-items: center;
 }
-
-
-
-
 .wrap_we_are {
   width: 100%;
   height: 100%;
@@ -310,8 +308,6 @@
   width: 270px;
   margin: auto;
 }
-
-
 .we_are_title {
   font-size: 34px;
   letter-spacing: 5px;
@@ -384,8 +380,6 @@
   height: 80px;
 }
 
-
-
 .fa-brands {
   font-size: 25px;
   color: #fff;
@@ -400,7 +394,6 @@
 .logo:hover {
   background-color: rgba(255, 255, 255, 0);
 }
-
 
 .contact {
   display: flex;
@@ -417,7 +410,7 @@
 }
 
 .contact_title {
-  font-size: calc(50px + 40 * (100vw / 1170));
+  font-size: 90px;
   color: #262626;
   font-weight: 700;
   font-family: "Raleway";
@@ -519,8 +512,6 @@
   height: 10.5%;
 }
 
-
-
 .footer {
   min-height: 100px;
   height: 10.5%;
@@ -531,4 +522,19 @@
 
 .love {
   color: #ff2b58;
+}
+
+@media (max-width:577px) {
+
+  .home_body__title_turquoise,
+  .blog_title,
+  .contact_title {
+    font-size: 62px;
+  }
+}
+@media (max-width:380px),
+(min-width:990px) {
+  .author {
+    bottom: 5px;
+  }
 }
